@@ -1,0 +1,140 @@
+body{
+  color:white;
+  background: black;
+  text-transform:uppercase;
+}
+#main{
+  display: grid;
+  grid-template-columns: 12% auto;
+  grid-gap:20px;
+  animation: cool;
+  animation-timing-function: linear;
+  animation-duration:2s;
+  animation-delay:2s;
+}
+input{
+  height:40px;
+  transition-timing-function:linear;
+  transition: all;
+  transition-duration:0.3s;
+}
+input:hover{
+  width:200px;
+  margin: 0 5px;
+}
+.search{
+  border:1px solid white;
+  transition-duration:0.4s;
+}
+.search:hover{
+  margin:0 5px;
+}
+.grid-1{
+  display: grid;
+  background: url("../img/nav.jpg");
+  background-size: cover;
+  border: 2px solid white;
+}
+.grid-item1{
+  background: url("../img/it.jpg");
+  margin:1px;
+  background-size: cover;
+  justify-content: center;
+  height: 100px;
+  transition: all;
+  transition-timing-function: linear;
+  transition-duration: 0.2s;
+}
+.grid-item1:hover{
+  margin:6px 0;
+  height:110px;
+}
+.first-grid{
+  display: block;
+  justify-content: center;
+  line-height: 1;
+  height:200px;
+  background: url("../img/it.jpg");
+}
+.grid-item{
+  font-size:25px;
+  font-weight: bold;
+  color:white;
+  position:relative;
+}
+a:link{
+   text-decoration: none;
+   color:gray;
+}
+a:visited{
+    color:white;
+}
+a:hover{
+     color:black;
+}
+a:active{
+     color:orange;
+}
+.propic{
+  border:10px double white;
+  border-radius:5% 25%;
+  width:120px;
+  position:relative;
+  transition-timing-function: linear;
+  transition: all;
+  transition-duration: 1s;
+}
+.propic:hover{
+  width:150px;
+  opacity:0.8;
+}
+.fle{
+  display:flex;
+  height: 40px;
+  border:3px solid white;
+  border-radius:5px;
+  background:url("../img/nav.jpg");
+  background-size:contain;
+  line-height: 2;
+  justify-content:left;
+}
+.fle-item{
+  width:90px;
+  background:url("../img/it.jpg");
+  background-size: cover;
+  border:1px solid white;
+  border-radius: 5px;
+  font-weight:bold;
+  margin:1px;
+  padding:2px;
+  text-align:center;
+  transition:all;
+  transition-timing-function: linear;
+  transition-duration:0.2s;
+}
+.fle-item:hover{
+  margin:0 5px;
+  width:100px;
+  background:rgba(0,0,0,0);
+}
+.img-grid{
+  display:grid;
+  grid-template-columns: auto auto auto;
+}
+.img-item{
+  height:180px;
+  width:280px;
+  margin:10px 10px;
+  transition:all;
+  transition-timing-function: linear;
+  transition-duration:1.5s;
+}
+.img-item:hover{
+  margin:5px 5px;
+  height:225px;
+  width:350px;
+}
+@keyframes cool{
+  0%{opacity:0;}
+  100%{opacity:1;}
+}
